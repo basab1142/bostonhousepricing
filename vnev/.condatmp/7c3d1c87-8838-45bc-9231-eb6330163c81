@@ -1,0 +1,12 @@
+prefix=b:/Deploy/Docker_exp/Practice-Docker-github-action/vnev/Library
+exec_prefix=b:/Deploy/Docker_exp/Practice-Docker-github-action/vnev/Library
+libdir=b:/Deploy/Docker_exp/Practice-Docker-github-action/vnev/Library/lib
+includedir=b:/Deploy/Docker_exp/Practice-Docker-github-action/vnev/Library/include
+
+Name: libzmq
+Description: 0MQ c++ library
+Version: 4.3.4
+Libs: -L${libdir} -lzmq
+Libs.private: -lstdc++ 
+Requires.private: 
+Cflags: -I${includedir} 
